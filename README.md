@@ -1,6 +1,6 @@
-End-to-End QA Case Study
+# End-to-End QA Case Study
 
-Project Overview
+## Project Overview
 
 This project is an end-to-end QA case study created using the Practice Software Testing e-commerce application.
 
@@ -8,156 +8,133 @@ The purpose of the project is to demonstrate a complete QA workflow by combining
 
 The main user journey includes registration, login, product search, shopping cart, checkout, and order-related validations.
 
-Test Scope
+---
+
+## Test Scope
 
 The following areas were included in the project:
 
-User Registration
+- User Registration
+- Login
+- Product Search
+- Product Detail
+- Shopping Cart
+- Checkout / Order Flow
+- API Validation
+- Database Validation
+- Bug Reporting
 
-Login
+---
 
-Product Search
-
-Product Detail
-
-Shopping Cart
-
-Checkout / Order Flow
-
-API Validation
-
-Database Validation
-
-Bug Reporting
-
-Testing Activities
+## Testing Activities
 
 The following testing activities were performed:
 
-Functional Testing
+- Functional Testing
+- Positive Testing
+- Negative Testing
+- Exploratory Testing
+- Regression Testing
+- API Testing
+- SQL / Database Validation
+- Defect Reporting
+- Test Documentation
 
-Positive Testing
+---
 
-Negative Testing
+## Manual Testing
 
-Exploratory Testing
+A total of **28 manual test cases** were documented and evaluated.
 
-Regression Testing
+### Test Results
 
-API Testing
-
-SQL / Database Validation
-
-Defect Reporting
-
-Test Documentation
-
-Manual Testing
-
-A total of 28 manual test cases were documented and evaluated.
-
-Test Results
-
-Passed: 24
-
-Failed: 2
-
-Needs Clarification: 2
+- Passed: 24
+- Failed: 2
+- Needs Clarification: 2
 
 The test cases cover:
 
-Login
+- Login
+- Registration
+- Search
+- Shopping Cart
+- Checkout
 
-Registration
+---
 
-Search
-
-Shopping Cart
-
-Checkout
-
-API Testing
+## API Testing
 
 Selected backend operations were validated using Postman.
 
 API validations included:
 
-Get all products
+- Get all products
+- Get product by ID
+- Invalid product ID
+- User login
+- Protected endpoint access
+- Create user
+- Update user
+- Delete user
 
-Get product by ID
+A total of **8 API validations** were completed successfully.
 
-Invalid product ID
+---
 
-User login
-
-Protected endpoint access
-
-Create user
-
-Update user
-
-Delete user
-
-A total of 8 API validations were completed successfully.
-
-Database Validation
+## Database Validation
 
 SQL queries were used to demonstrate database validation techniques for QA.
 
 Validation checks included:
 
-User record validation
-
-Duplicate email detection
-
-NULL email checks
-
-Order and user relationships
-
-Order item and product relationships
-
-Invalid quantity detection
-
-Negative stock validation
-
-Order total calculation
+- User record validation
+- Duplicate email detection
+- NULL email checks
+- Order and user relationships
+- Order item and product relationships
+- Invalid quantity detection
+- Negative stock validation
+- Order total calculation
 
 Database validation was performed using a sample PostgreSQL database created for QA practice.
 
-Defects Identified
+---
 
-BUG_001 – Incorrect Password Validation Message
+## Defects Identified
+
+### BUG_001 – Incorrect Password Validation Message
 
 When a password without a special symbol was submitted during registration, the application displayed an unclear validation message.
 
-Severity: Low
-Priority: Medium
+**Severity:** Low  
+**Priority:** Medium
 
-BUG_002 – Shopping Cart Not Synchronized Across Browser Tabs
+---
+
+### BUG_002 – Shopping Cart Not Synchronized Across Browser Tabs
 
 Products added to the shopping cart in one browser tab were not visible in another tab.
 
-Severity: Medium
-Priority: Medium
+**Severity:** Medium  
+**Priority:** Medium
 
-Tools Used
+---
 
-Google Chrome
+## Tools Used
 
-Postman
+- Google Chrome
+- Postman
+- PostgreSQL
+- pgAdmin
+- Visual Studio Code
+- Git
+- GitHub
 
-PostgreSQL
+---
 
-pgAdmin
+## Repository Structure
 
-Visual Studio Code
-
-Git
-
-GitHub
-
-Repository Structure
-
+```text
 qa-e2e-case-study
 │
 ├── README.md
@@ -186,31 +163,3 @@ qa-e2e-case-study
 │
 └── test-summary
     └── Test-Summary.md
-
-What I Learned
-
-Through this project, I practiced how different QA activities can be combined within a single testing workflow.
-
-I gained practical experience in:
-
-Planning an end-to-end testing process
-
-Writing and executing test cases
-
-Documenting test results
-
-Reporting functional defects
-
-Validating backend behavior using APIs
-
-Writing SQL queries for QA validation
-
-Distinguishing confirmed defects from unclear requirements
-
-Organizing QA documentation in a GitHub repository
-
-Project Status
-
-Completed
-
-This project represents an end-to-end QA case study combining manual testing, API testing, database validation, and defect reporting.
